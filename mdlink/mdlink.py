@@ -14,7 +14,7 @@ class MDLink(commands.Cog):
     async def mdlink(self, ctx):
         """Return a link to the modmail thread in markdown syntax."""
         link = await self.bot.api.get_log_link(ctx.channel.id)
-        await ctx.send(f"`[Modmail Thread]({link})`")
+        await ctx.send(f"`[Modmail]({link})`")
 
 def setup(bot):
     bot.add_cog(MDLink(bot))
