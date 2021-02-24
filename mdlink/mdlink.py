@@ -6,7 +6,7 @@ from core.models import PermissionLevel
 
 class MDLink(commands.Cog):
     def __init__(self, bot):
-        self.bot = botw
+        self.bot = bot
 
     @commands.command()
     @checks.has_permissions(PermissionLevel.MODERATOR)
